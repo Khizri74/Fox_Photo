@@ -1,0 +1,17 @@
+
+
+@mixin hover-link {
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin hover-in-active-btn {
+    button:hover {
+        background-color: var(--hover-btn-color);
+    }
+
+    button:active {
+        background-color: var(--active-btn-color);
+    }
+}

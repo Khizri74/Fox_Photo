@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --accent-btn-color: #FF7D00;
+  --hover-btn-color: #FC912A;
+  --active-btn-color: #FF6B00;
+  --text-color: #fff;
+  --content-header-color: #00AFCC;
+  --content-color: #73E5FF;
+  --accent-icons-color: #3E6E96;
+  --hover--icons-color: #2D7FA3;
+  --link-color: #00636D;
+  --font-size-h1: 52px;
+  --font-size-h2: 40px;
+  --btn-border-radius: 8px;
+}
+
+.header {
+  height: 117px;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 30px 0 16px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+nav .nav__left {
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+nav .nav__left a:hover {
+  text-decoration: none;
+}
+nav .nav__right {
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+}
+
+.content {
+  display: flex;
+  background-color: var(--content-header-color);
+  color: var(--text-color);
+}
+.content__nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+}
+.content__nav li {
+  margin-left: 50px;
+}
+.content__nav li:first-child {
+  margin-left: 0;
+}
+.content__nav li:last-child {
+  border-left: 1px solid var(--text-color);
+}
+.content__body {
+  display: flex;
+  height: 400px;
+  background: url(/assets/bg.png);
+}
+.content__body img {
+  margin: 39px 69.5px 39px 16px;
+  width: 569px;
+  height: 323px;
+}
+.content__body .body__info {
+  width: 767px;
+  margin-top: 33px;
+  color: var(--text-color);
+}
+.content__body .body__info button:hover {
+  background-color: var(--hover-btn-color);
+}
+.content__body .body__info button:active {
+  background-color: var(--active-btn-color);
+}
+.content__body .body__info h1 {
+  font-size: var(--font-size-h1);
+  margin-bottom: 37px;
+}
+.content__body .body__info button {
+  width: 300px;
+  height: 61px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: var(--accent-btn-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--btn-border-radius);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html ul, body ul {
+  list-style-type: none;
+}
+html a, body a {
+  color: var(--link-color);
+}/*# sourceMappingURL=style.css.map */
