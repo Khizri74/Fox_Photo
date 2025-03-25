@@ -6,6 +6,31 @@
     }
 }
 
+@mixin hover-icons-btn {
+    .fa-vk {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        background-color: var(--accent-icons-color);
+        border-radius: 13px;
+        color: var(--text-color);
+    }
+        .fa-vk:hover {
+            background-color: var(--hover-icons-color);
+        }
+        .fa-instagram {
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+            background-color: var(--accent-icons-color);
+            border-radius: 13px;
+            color: var(--text-color);
+        }
+        .fa-instagram:hover {
+            background-color: var(--hover-icons-color);
+        }
+}
+
 @mixin hover-in-active-btn {
     button:hover {
         background-color: var(--hover-btn-color);
@@ -15,3 +40,7 @@
         background-color: var(--active-btn-color);
     }
 }
+
+
+
+
