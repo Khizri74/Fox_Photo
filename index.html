@@ -12,7 +12,7 @@
             <nav>
                 <ul class="nav__left">
                     <li><img src="/assets/logo.png" alt="logo"></li>
-                    <li><a href="tel:(342) 247-4-222">(342) 247-4-222 <br>
+                    <li><a href="tel:(342) 247-4-222">(342) 247-4-222<br>
                         <a href="#">Пермь, ул. Пушкина, 66</a></li>
                 </ul>
                 <ul class="nav__right">
@@ -23,10 +23,11 @@
         </header>
         <section class="content__header">
             <ul class="content__header__top-list">
-                <li>Виды печати</li>
-                <li>Наши работы</li>
-                <li>Контакты</li>
-                <li>Конструктор футболок</li>
+                <a href="#"><li>Виды печати</li></a>
+                <a href="#"><li>Наши работы</li></a>
+                <a href="#"><li>Контакты</li></a>
+                <li class="not-padding"><hr></li>
+                <a href="#"><li class="not-padding">Конструктор футболок</li></a>
             </ul>
         </section>
         <article class="content__banner">
@@ -110,16 +111,71 @@
             <section class="content__body-map-info">
                 <h2>Как нас найти</h2>
                 <section class="map-info info-address-position">
-                    <ul class="map-info-heading">
-                        <li>Адрес</li>
-                        <li>Телефон</li>
-                    </ul>
-                    <ul class="map-info-address">
-                        <li>г. Пермь, ул. Пушкина, 66 вывеска «Фото, ксерокс» 1 этаж</li>
-                        <li><a href="tel:(342) 247-4-222"></a>(342) 247-4-222</li>
-                    </ul>
+                    <table>
+                        <tr>
+                            <th style="font-weight: 700;">Адрес</th>
+                            <th colspan="2" style="padding-right: 40px; letter-spacing: -1px;">г. Пермь, ул. Пушкина, 66 вывеска «Фото, ксерокс»<br> 1 этаж</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 700;">Телефон</th>
+                            <th style="font-weight: 400;"><a href="tel:(342) 247-4-222">(342) 247-4-222</a></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"     ><strong>Время работы</strong><br>
+                                будни — с 11.00 до 20.00<br> выходные — с 11.00 до 18.00
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <a href="mailto:vk.com/foxphoto59"><i class='fab fa-vk'></i>vk.com/foxphoto59</a><br>
+                                <a href="mailto:instagram.com/foxphotoperm"><i class='fab fa-instagram'></i>instagram.com/foxphotoperm</a>
+                            </th>
+                        </tr>
+                    </table>
                 </section>
             </section>        
+        </article>
+        <section class="offers">
+            <div class="offers-item">
+                <p>Фотосалон Fox Photo Пермь предлагает широкий спектр услуг, связанных с фотографией: фото на различные виды документов, реставрация фотографии, печать фотографий на профессиональной фотобумаге, печать фото на холсте, нанесение Ваших изображений на кружки, футболки, магниты, брелоки и т.д.</p>
+            </div>
+            <div class="offers-item">
+                <h4>Напечатаем ваши фотографии</h4>
+                <p>Если у Вас накопились фотографии с отпусков, праздников или просто запомнившихся дней, мы предлагаем Вам не надеяться на бесперебойную работу компьютера и распечатать любимые фотографии, чтобы в случае поломки компьютерной техники не остаться без приятных сердцу и глазу воспоминаний. Тем более, что распечатать фото через интернет Пермь теперь можно, не выходя из дома или офиса.
+                    Наш фотосалон предлагает Вам весьма востребованную услугу среди наших клиентов – печать фото через интернет Пермь. Для того, чтобы заказать фото через интернет Пермь, нужно отправить Ваши фотографии нам на почту fox-photo@mail.ru, после чего Вам остается лишь дождаться готовности фотографий.</p>
+            </div>
+            <div class="offers-item">
+                <h4>Сделаем одежду уникальной</h4>
+                <p>Мы активно развиваемся и продолжаем радовать наших клиентов качественными и приятными глазу вещицами. Так, например, в холодное время года у нас заказывают теплые толстовки и свитшоты с надписями. Для жарких летних деньков подходят хлопковые футболки и майки с любыми принтами.</p>
+            </div>
+            <div class="offers-item">
+                <h4>Оживим интерьер</h4>
+                <p>Популярная услуга — печать фото на холсте — уже давно полюбилась нашим заказчикам. Холсты очень органично вписываются в интерьер, а разнообразие стилей оформления фотографии будет радовать самый изысканный вкус.</p>
+            </div>
+        </section>
+        <article class="support">
+            <section class="support-form">
+                <form action="#">
+                    <h2>Оставьте сообщение</h2>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="number" placeholder="Контактный телефон">
+                    <textarea name="text" placeholder="Сообщение"></textarea>
+                </form>
+                <button>Отправить</button>
+            </section>
+            <section class="contacts">
+                <h2>Контакты</h2>
+                <ul class="contacts-list">
+                    <li><a href="tel:+7 (342) 2 474 222:"><img src="/assets/k_call.png" alt="phone">+ 7 (342) 2 474 222</a></li>
+                    <li><a href="mailto:fox-photo@mail.ru"><img src="/assets/Vector.png" alt="mail">fox-photo@mail.ru</a></li>
+                    <li><a href="tel:+7 (982) 452 50 60"><img src="/assets/k_viber.png" alt="viber">+7 (982) 452 50 60</a></li>
+                    <li><a href="#"><img src="/assets/k_map.png" alt="marker">Пермь, ул. Пушкина, 66</a></li>
+                </ul>
+                <ul class="contacts_social-list">
+                    <li><a href="mailto"><i class='fab fa-vk'></i></li></a>
+                    <li><a href="mailto"><i class='fab fa-instagram'></i></li></a>
+                </ul>
+            </section>
         </article>
     </div>
 

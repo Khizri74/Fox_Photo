@@ -79,16 +79,28 @@ nav .nav__right .fa-instagram:hover {
   margin: 0;
   padding: 0 20px;
 }
+.content__header__top-list a {
+  text-decoration: none;
+  color: unset;
+}
 .content__header__top-list li {
   margin-left: 50px;
+  font-size: 20px;
   font-weight: bold;
+  text-wrap: nowrap;
 }
 .content__header__top-list li:first-child {
   margin-left: 0;
 }
-.content__header__top-list li:last-child {
-  margin-left: 65vw;
-  border-left: 2px solid var(--text-color);
+.content__header__top-list li hr {
+  height: 56px;
+  width: 1px;
+  background-color: var(--text-color);
+  border: none;
+  margin: 0 26px 0 56vw;
+}
+.content__header__top-list li:not(.not-padding) {
+  padding-left: 26px;
 }
 
 .content__banner {
@@ -106,6 +118,10 @@ nav .nav__right .fa-instagram:hover {
   margin-top: 33px;
   color: var(--text-color);
 }
+.content__banner .banner-info button {
+  font-size: 24px;
+  font-weight: bold;
+}
 .content__banner .banner-info button:hover {
   background-color: var(--hover-btn-color);
 }
@@ -119,8 +135,7 @@ nav .nav__right .fa-instagram:hover {
 .content__banner .banner-info button {
   max-width: 300px;
   height: 61px;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 0 34px;
   background-color: var(--accent-btn-color);
   color: var(--text-color);
   border: none;
@@ -220,29 +235,181 @@ nav .nav__right .fa-instagram:hover {
   height: 465px;
   position: absolute;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7);
   margin: 16px 0 16px 16px;
-  display: grid;
-  padding: 0 0 0 37px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .content__body-map-info h2 {
   font-size: 40px;
   margin: 0;
+  padding: 28px 0 0 37px;
 }
 .content__body-map-info .map-info {
+  text-align: start;
+}
+.content__body-map-info .map-info table {
+  border-spacing: 30px;
+  text-align: start;
+}
+.content__body-map-info .map-info table tr {
+  vertical-align: top;
+}
+.content__body-map-info .map-info table th {
+  text-align: justify;
+  font-weight: 400;
+}
+.content__body-map-info .map-info table th .fa-vk {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--accent-icons-color);
+  border-radius: 13px;
+  color: var(--text-color);
+}
+.content__body-map-info .map-info table th .fa-vk:hover {
+  background-color: var(--hover-icons-color);
+}
+.content__body-map-info .map-info table th .fa-instagram {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--accent-icons-color);
+  border-radius: 13px;
+  color: var(--text-color);
+}
+.content__body-map-info .map-info table th .fa-instagram:hover {
+  background-color: var(--hover-icons-color);
+}
+.content__body-map-info .map-info table th a {
+  display: inline-flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+.content__body-map-info .map-info table th .fa-vk {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 8px;
+}
+.content__body-map-info .map-info table th .fa-instagram {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.offers {
+  height: 698px;
+  padding: 20px 0;
+}
+.offers-item {
+  padding-left: 16px;
+  margin: auto 0;
+}
+.offers-item h4 {
+  font-size: 24px;
+}
+.offers-item p {
+  font-size: 16px;
+}
+
+.support {
   display: flex;
-  justify-content: space-between;
+  padding: 0 20px;
+  -moz-column-gap: 85px;
+       column-gap: 85px;
+  background: url(/assets/bg.png);
+  color: var(--text-color);
 }
-.content__body-map-info .map-info-heading {
-  font-size: 18px;
+.support .support-form button {
+  font-size: 24px;
   font-weight: bold;
-  padding: 0;
 }
-.content__body-map-info .map-info-heading :first-child {
-  margin-bottom: 40px;
+.support .support-form button:hover {
+  background-color: var(--hover-btn-color);
 }
-.content__body-map-info .map-info-address {
-  padding: 0;
+.support .support-form button:active {
+  background-color: var(--active-btn-color);
+}
+.support .support-form button {
+  height: 60px;
+  width: 290px;
+  margin: 23px 0;
+  background-color: var(--accent-btn-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--btn-border-radius);
+}
+.support .support-form form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.support .support-form form h2 {
+  font-size: var(--font-size-h2);
+  margin: 38px 0 0 0;
+}
+.support .support-form form input {
+  width: 600px;
+  height: 42px;
+  padding: 0 17px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.support .support-form form textarea {
+  width: 600px;
+  height: 117px;
+  padding: 10px 17px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.support .contacts {
+  width: 672px;
+  height: 427px;
+  background-color: #fff;
+  margin: 24px 0;
+}
+.support .contacts h2 {
+  color: var(--link-color);
+  font-size: var(--font-size-h2);
+  margin: 0;
+  padding: 17px 0 0 60px;
+}
+.support .contacts-list {
+  padding-left: 60px;
+}
+.support .contacts-list li {
+  padding: 10px 0;
+}
+.support .contacts-list li img {
+  padding-right: 30px;
+}
+.support .contacts_social-list {
+  display: flex;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+  padding-left: 58px;
+}
+.support .contacts_social-list .fa-vk {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--accent-icons-color);
+  border-radius: 13px;
+  color: var(--text-color);
+}
+.support .contacts_social-list .fa-vk:hover {
+  background-color: var(--hover-icons-color);
+}
+.support .contacts_social-list .fa-instagram {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: var(--accent-icons-color);
+  border-radius: 13px;
+  color: var(--text-color);
+}
+.support .contacts_social-list .fa-instagram:hover {
+  background-color: var(--hover-icons-color);
 }
 
 html, body {
