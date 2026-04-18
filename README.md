@@ -9,7 +9,7 @@
 Интерфейс разработан на основе бесплатного макета Figma.
 <br>
 
-<img src="/assets/Foxphoto.png">
+<img src="assets/Foxphoto.png">
 
 <a href="https://www.figma.com/design/FGIrxYNVJRFy5nESrFbGHw/Foxphoto--?node-id=0-1&p=f">🔗Ссылка на проект в Pixso</a>
 

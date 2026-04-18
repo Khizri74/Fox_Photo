@@ -136,7 +136,7 @@ nav {
 .content__banner {
     display: flex;
     height: 400px;
-    background: url(/assets/bg.png);
+    background: url(assets/bg.png);
 
     & img {
         margin: 39px 69.5px 39px 16px;
@@ -357,7 +357,7 @@ nav {
     justify-content: space-between;
     column-gap: 85px;
     padding: 0 20px;
-    background: url(/assets/bg.png);
+    background: url(assets/bg.png);
     color: var(--text-color);
 
     & .support-form {
