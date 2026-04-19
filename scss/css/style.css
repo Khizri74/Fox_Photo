@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
-  --accent-btn-color: #FF7D00;
-  --hover-btn-color: #FC912A;
-  --active-btn-color: #FF6B00;
+  --accent-btn-color: #ff7d00;
+  --hover-btn-color: #fc912a;
+  --active-btn-color: #ff6b00;
   --text-color: #fff;
-  --content-header-color: #00AFCC;
-  --content-about-color: #73E5FF;
-  --accent-icons-color: #3E6E96;
-  --hover-icons-color: #2D7FA3;
-  --link-color: #00636D;
+  --content-header-color: #00afcc;
+  --content-about-color: #73e5ff;
+  --accent-icons-color: #3e6e96;
+  --hover-icons-color: #2d7fa3;
+  --link-color: #00636d;
   --link-size: 18px;
   --font-size-h1: 52px;
   --font-size-h2: 40px;
@@ -41,8 +41,7 @@ nav ul {
   margin: 0;
 }
 nav .nav__left {
-  -moz-column-gap: 35px;
-       column-gap: 35px;
+  column-gap: 35px;
 }
 nav .nav__left a:hover {
   text-decoration: none;
@@ -96,8 +95,7 @@ nav .nav__right .mobile-block .burger.active::after {
   transition: bottom 0.3s, transform 0.3s 0.15s;
 }
 nav .nav__right .desktop-social-block {
-  -moz-column-gap: 22px;
-       column-gap: 22px;
+  column-gap: 22px;
 }
 nav .nav__right .desktop-social-block .fa-vk {
   height: 40px;
@@ -147,8 +145,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 .top-list__right {
   display: flex;
   align-items: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
 }
 
 .top-list__right {
@@ -165,7 +162,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 .content__banner {
   display: flex;
   height: 400px;
-  background: url(assets/bg.png);
+  background: url(/assets/bg.png);
 }
 .content__banner img {
   margin: 39px 69.5px 39px 16px;
@@ -237,8 +234,9 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 }
 .content__body-list {
   display: grid;
-  justify-content: space-around;
-  grid-template-columns: repeat(4, max-width(300px));
+  /* justify-content: space-around; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-columns: 1fr;
   grid-auto-rows: 150px;
   grid-template-areas: "clothes accessories image1 photo-services" "clothes accessories image1 photo-services" "clothes gifts for-the-house image2" "tableware gifts for-the-house image2";
   padding-left: 23px;
@@ -337,8 +335,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 }
 .content__body-map-info .map-info table th a {
   display: inline-flex;
-  -moz-column-gap: 14px;
-       column-gap: 14px;
+  column-gap: 14px;
 }
 .content__body-map-info .map-info table th .fa-vk {
   width: 30px;
@@ -373,10 +370,9 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 .support {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 85px;
-       column-gap: 85px;
+  column-gap: 85px;
   padding: 0 20px;
-  background: url(assets/bg.png);
+  background: url(/assets/bg.png);
   color: var(--text-color);
 }
 .support .support-form {
@@ -446,8 +442,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 }
 .support .contacts_social-list {
   display: flex;
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  column-gap: 28px;
   padding-left: 58px;
 }
 .support .contacts_social-list .fa-vk {
@@ -473,24 +468,30 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
   background-color: var(--hover-icons-color);
 }
 
-html, body {
+* {
+  border: 2px solid green;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-html ul, body ul {
+html ul,
+body ul {
   list-style-type: none;
 }
-html a, body a {
+html a,
+body a {
   color: var(--link-color);
   font-size: var(--link-size);
 }
 
 @media (max-width: 1340px) {
   .support {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
 }
 @media (max-width: 1240px) {
@@ -528,8 +529,7 @@ html a, body a {
     padding-left: 17px;
   }
   .support {
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
   .support .support-form form h2 {
     font-size: var(--laptop-size-h2);
@@ -540,8 +540,7 @@ html a, body a {
 }
 @media (max-width: 870px) {
   .content__header__top-list .top-list__right {
-    -moz-column-gap: 3vw;
-         column-gap: 3vw;
+    column-gap: 3vw;
   }
   .contacts h2 {
     padding: 17px 0 0 36px;
@@ -552,8 +551,7 @@ html a, body a {
 }
 @media (max-width: 768px) {
   .header nav {
-    -moz-column-gap: 13px;
-         column-gap: 13px;
+    column-gap: 13px;
   }
   .header nav .nav__left img {
     width: 101px;
@@ -565,8 +563,7 @@ html a, body a {
     display: none;
   }
   .content__header__top-list .top-list__left {
-    -moz-column-gap: 4vw;
-         column-gap: 4vw;
+    column-gap: 4vw;
     padding: 0 0 0 20px;
   }
   .content__header__top-list .top-list__right span {
@@ -594,8 +591,7 @@ html a, body a {
     font-size: var(--table-size-h2);
   }
   .support {
-    -moz-column-gap: 8px;
-         column-gap: 8px;
+    column-gap: 8px;
   }
   .support .support-form {
     padding-right: 32px;
@@ -609,4 +605,26 @@ html a, body a {
   .support .contacts-list {
     padding-left: 30px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (min-width: 468px) {
+  .content__banner {
+    height: 8px;
+    position: relative;
+  }
+  .content__banner .top-list__left,
+  .content__banner .top-list__right {
+    display: none;
+  }
+  .content__banner .banner-info {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+  }
+  .content__body-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas: "clothes accessories" "image1 gifts" "for-the-house tableware" "gift for-the-house" "image2 photo-services" "for-the-house for-the-house";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

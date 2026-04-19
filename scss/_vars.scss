@@ -1,33 +1,32 @@
-
 $opensans: "Open Sans", sans-serif;
 
 :root {
-    --accent-btn-color: #FF7D00;
-    --hover-btn-color: #FC912A;
-    --active-btn-color: #FF6B00;
+  --accent-btn-color: #ff7d00;
+  --hover-btn-color: #fc912a;
+  --active-btn-color: #ff6b00;
 
-    --text-color: #fff;
+  --text-color: #fff;
 
-    --content-header-color: #00AFCC;
-    
-    --content-about-color: #73E5FF;
+  --content-header-color: #00afcc;
 
-    --accent-icons-color: #3E6E96;
-    --hover-icons-color: #2D7FA3;
+  --content-about-color: #73e5ff;
 
-    --link-color: #00636D;
-    --link-size: 18px;
+  --accent-icons-color: #3e6e96;
+  --hover-icons-color: #2d7fa3;
 
-    --font-size-h1: 52px;
-    --font-size-h2: 40px;
-    --laptop-size-h1: 44px;
-    --laptop-size-h2: 36px;
-    --table-size-h1: 36px;
-    --table-size-h2: 32px;
-    --mobile-size-h1: 24px;
-    --mobile-size-h2: 20px;
+  --link-color: #00636d;
+  --link-size: 18px;
 
-    --btn-border-radius: 8px;
+  --font-size-h1: 52px;
+  --font-size-h2: 40px;
+  --laptop-size-h1: 44px;
+  --laptop-size-h2: 36px;
+  --table-size-h1: 36px;
+  --table-size-h2: 32px;
+  --mobile-size-h1: 24px;
+  --mobile-size-h2: 20px;
 
-    --max-width: 100%;
+  --btn-border-radius: 8px;
+
+  --max-width: 100%;
 }
