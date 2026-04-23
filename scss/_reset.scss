@@ -2,18 +2,36 @@
 //     outline: 2px solid green;
 // }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $opensans;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $opensans;
 
-    ul {
-        list-style-type: none;
-    }
+  ul {
+    list-style-type: none;
+  }
 
-    a {
-        color: var(--link-color);
-        font-size: var(--link-size);
-    }
+  a {
+    color: var(--link-color);
+    font-size: var(--link-size);
+  }
+}
+
+.header,
+.content__header {
+  display: block;
+}
+
+.content__banner {
+  display: flex;
+}
+
+.content__about,
+.content__body,
+.content__body-map,
+.offers,
+.support {
+  display: none;
 }
