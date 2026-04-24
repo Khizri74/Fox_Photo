@@ -11,7 +11,7 @@
 
 <img src="assets/Foxphoto.png">
 
-<a href="https://www.figma.com/design/FGIrxYNVJRFy5nESrFbGHw/Foxphoto--?node-id=0-1&p=f">🔗Ссылка на проект в Pixso</a>
+<a href="https://www.figma.com/design/FGIrxYNVJRFy5nESrFbGHw/Foxphoto--?node-id=0-1&p=f">🔗Ссылка на проект в Figma</a>
 
 <h1 style="display: block; border-bottom:  0.5px solid #555;">💡 Стек</h1>
  <br>
