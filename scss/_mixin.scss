@@ -4,26 +4,6 @@
   }
 }
 
-@mixin laptop-size-header-link {
-  ul:first-child {
-    font-size: var(--laptop-size-header-link-number);
-  }
-
-  ul:last-child {
-    font-size: var(--laptop-size-header-link-address);
-  }
-}
-
-@mixin mobile-size-header-link {
-  ul:first-child {
-    font-size: var(--mobile-size-header-lisk-number);
-  }
-
-  ul:last-child {
-    font-size: var(--mobile-size-header-lisk-address);
-  }
-}
-
 @mixin hover-icons-btn {
   .fa-vk {
     height: 40px;

@@ -22,6 +22,20 @@ nav {
 
   .nav__left {
     column-gap: 35px;
+
+    & a {
+      color: #000;
+      all: unset;
+    }
+
+    & .header-link__tel {
+      font-size: var(--laptop-size-header-link-number);
+      font-weight: 600;
+    }
+
+    & .header-link__address {
+      font-size: var(--laptop-size-header-link-address);
+    }
   }
 
   .nav__right {
@@ -107,12 +121,12 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    a {
+    & a {
       text-decoration: none;
-      color: unset;
+      color: var(--text-color);
     }
 
-    li {
+    & li {
       font-size: 20px;
       font-weight: bold;
       text-wrap: nowrap;
@@ -150,7 +164,6 @@ nav {
     width: clamp(266px, 35rem, 569px);
     min-width: 266px;
     height: auto;
-    border: 2px solid red;
 
     & img {
       width: 100%;
@@ -166,20 +179,25 @@ nav {
     color: var(--text-color);
     @include hover-in-active-btn;
 
-    h1 {
+    & h1 {
       font-size: var(--font-size-h1);
       // font-size: clamp(24px, 12vw, 52px);
       margin: 33px 0 37px 0;
     }
 
-    button {
-      max-width: 300px;
+    & button {
+      width: clamp(290px, 19rem, 300px);
       height: 61px;
       padding: 0 34px;
       background-color: var(--accent-btn-color);
       color: var(--text-color);
       border: none;
       border-radius: var(--btn-border-radius);
+      font-size: clamp(
+        var(--btn-text-mobile-size),
+        24px,
+        var(--btn-text-laptop-size)
+      );
     }
   }
 }
@@ -193,6 +211,11 @@ nav {
   h2 {
     margin: 0;
     font-size: var(--font-size-h2);
+    /* font-size: clamp(
+      var(--font-size-h2),
+      var(--laptop-size-h2),
+      var(--mobile-size-h2)
+    ); */
     margin-bottom: 13px;
   }
 
@@ -280,7 +303,7 @@ nav {
     }
 
     & h3 {
-      font-size: 36px;
+      font-size: var(--table-size-h1);
       font-weight: bold;
       margin: 10px 0 15px 0;
     }

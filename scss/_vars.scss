@@ -16,21 +16,24 @@ $opensans: "Open Sans", sans-serif;
 
   --link-color: #00636d;
   --link-size: 18px;
+  --mobile-link-size: 16px;
 
   --font-size-h1: 52px;
   --font-size-h2: 40px;
   --laptop-size-h1: 44px;
   --laptop-size-h2: 36px;
-  --laptop-size-header-link-number: 24px;
-  --laptop-size-header-link-address: 16px;
-  --mobile-size-header-link-number: 16px;
-  --mobile-size-header-link-address: 12px;
   --table-size-h1: 36px;
   --table-size-h2: 32px;
   --mobile-size-h1: 24px;
   --mobile-size-h2: 20px;
+  --laptop-size-header-link-number: 24px;
+  --laptop-size-header-link-address: 16px;
+  --mobile-size-header-link-number: 16px;
+  --mobile-size-header-link-address: 12px;
 
   --btn-border-radius: 8px;
+  --btn-text-laptop-size: 24px;
+  --btn-text-mobile-size: 18px;
 
   --max-width: 100%;
 }

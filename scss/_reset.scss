@@ -20,7 +20,9 @@ body {
 }
 
 .header,
-.content__header {
+.content__header,
+.content__about,
+.content__body {
   display: block;
 }
 
@@ -28,8 +30,6 @@ body {
   display: flex;
 }
 
-.content__about,
-.content__body,
 .content__body-map,
 .offers,
 .support {

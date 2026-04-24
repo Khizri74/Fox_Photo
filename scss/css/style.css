@@ -10,19 +10,22 @@
   --hover-icons-color: #2d7fa3;
   --link-color: #00636d;
   --link-size: 18px;
+  --mobile-link-size: 16px;
   --font-size-h1: 52px;
   --font-size-h2: 40px;
   --laptop-size-h1: 44px;
   --laptop-size-h2: 36px;
-  --laptop-size-header-link-number: 24px;
-  --laptop-size-header-link-address: 16px;
-  --mobile-size-header-link-number: 16px;
-  --mobile-size-header-link-address: 12px;
   --table-size-h1: 36px;
   --table-size-h2: 32px;
   --mobile-size-h1: 24px;
   --mobile-size-h2: 20px;
+  --laptop-size-header-link-number: 24px;
+  --laptop-size-header-link-address: 16px;
+  --mobile-size-header-link-number: 16px;
+  --mobile-size-header-link-address: 12px;
   --btn-border-radius: 8px;
+  --btn-text-laptop-size: 24px;
+  --btn-text-mobile-size: 18px;
   --max-width: 100%;
 }
 
@@ -49,6 +52,17 @@ nav ul {
 }
 nav .nav__left {
   column-gap: 35px;
+}
+nav .nav__left a {
+  color: #000;
+  all: unset;
+}
+nav .nav__left .header-link__tel {
+  font-size: var(--laptop-size-header-link-number);
+  font-weight: 600;
+}
+nav .nav__left .header-link__address {
+  font-size: var(--laptop-size-header-link-address);
 }
 nav .nav__right {
   display: flex;
@@ -137,7 +151,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 }
 .content__header__top-list a {
   text-decoration: none;
-  color: unset;
+  color: var(--text-color);
 }
 .content__header__top-list li {
   font-size: 20px;
@@ -174,7 +188,6 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
   width: clamp(266px, 35rem, 569px);
   min-width: 266px;
   height: auto;
-  border: 2px solid red;
 }
 .content__banner .banner-img img {
   width: 100%;
@@ -202,13 +215,14 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
   margin: 33px 0 37px 0;
 }
 .content__banner .banner-info button {
-  max-width: 300px;
+  width: clamp(290px, 19rem, 300px);
   height: 61px;
   padding: 0 34px;
   background-color: var(--accent-btn-color);
   color: var(--text-color);
   border: none;
   border-radius: var(--btn-border-radius);
+  font-size: clamp(var(--btn-text-mobile-size), 24px, var(--btn-text-laptop-size));
 }
 
 .content__about {
@@ -220,6 +234,11 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
 .content__about h2 {
   margin: 0;
   font-size: var(--font-size-h2);
+  /* font-size: clamp(
+    var(--font-size-h2),
+    var(--laptop-size-h2),
+    var(--mobile-size-h2)
+  ); */
   margin-bottom: 13px;
 }
 .content__about-text {
@@ -289,7 +308,7 @@ nav .nav__right .desktop-social-block .fa-instagram:hover {
   flex-direction: column;
 }
 .content__body-list h3 {
-  font-size: 36px;
+  font-size: var(--table-size-h1);
   font-weight: bold;
   margin: 10px 0 15px 0;
 }
@@ -499,7 +518,9 @@ body a {
 }
 
 .header,
-.content__header {
+.content__header,
+.content__about,
+.content__body {
   display: block;
 }
 
@@ -507,8 +528,6 @@ body a {
   display: flex;
 }
 
-.content__about,
-.content__body,
 .content__body-map,
 .offers,
 .support {
@@ -638,16 +657,51 @@ body a {
   }
 }
 @media (max-width: 480px) {
-  .nav__left ul:first-child {
-    font-size: var(--mobile-size-header-lisk-number);
+  .nav__left .header-link__tel {
+    font-size: var(--mobile-size-header-link-number);
   }
-  .nav__left ul:last-child {
-    font-size: var(--mobile-size-header-lisk-address);
+  .nav__left .header-link__address {
+    font-size: var(--mobile-size-header-link-address);
   }
   .content__header__top-list {
     display: none;
   }
   .content__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content__banner .banner-img {
+    width: 266px;
+    margin: 0;
+  }
+  .content__banner .banner-info {
+    width: 290px;
+  }
+  .content__banner .banner-info h1 {
+    margin: 10px 0 17px 10px;
+  }
+  .content__banner .banner-info button {
+    height: 37px;
+  }
+  .content__about {
+    padding: 30px 0 0 16px;
+  }
+  .content__about h2 {
+    font-size: var(--mobile-size-h2);
+  }
+  .content__about span {
+    font-size: 14px;
+    margin-top: 22px;
+  }
+  .content__body h2 {
+    font-size: var(--mobile-size-h1);
+  }
+  .content__body h3 {
+    font-size: var(--mobile-size-h2);
+  }
+  .content__body-list {
     display: flex;
     flex-direction: column;
   }

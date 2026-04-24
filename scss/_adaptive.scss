@@ -226,7 +226,13 @@
 
 @media (max-width: 480px) {
   .nav__left {
-    @include mobile-size-header-link;
+    & .header-link__tel {
+      font-size: var(--mobile-size-header-link-number);
+    }
+
+    & .header-link__address {
+      font-size: var(--mobile-size-header-link-address);
+    }
   }
   .content__header__top-list {
     display: none;
@@ -234,6 +240,52 @@
 
   .content__banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+    & .banner-img {
+      width: 266px;
+      margin: 0;
+    }
+
+    & .banner-info {
+      width: 290px;
+
+      & h1 {
+        margin: 10px 0 17px 10px;
+      }
+
+      & button {
+        height: 37px;
+      }
+    }
+  }
+
+  .content__about {
+    padding: 30px 0 0 16px;
+    & h2 {
+      font-size: var(--mobile-size-h2);
+    }
+
+    & span {
+      font-size: 14px;
+      margin-top: 22px;
+    }
+  }
+
+  .content__body {
+    & h2 {
+      font-size: var(--mobile-size-h1);
+    }
+
+    & h3 {
+      font-size: var(--mobile-size-h2);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
