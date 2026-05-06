@@ -284,8 +284,16 @@
     }
 
     &-list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-auto-columns: repeat(2, 1fr);
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "clothes ."
+        "tableware tableware"
+        "accessories gift"
+        "gift ."
+        "for-the-house image1"
+        "photo-services image2";
     }
   }
 }
